@@ -1,0 +1,4 @@
+INDEX VERSION 1.131+C:\Users\ramzy\OneDrive\Bureau\calculatrice\.metadata\.plugins\org.eclipse.jdt.core
+1854107657.index
+219033506.index
+1865797976.index

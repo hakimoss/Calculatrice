@@ -1,0 +1,41 @@
+package calculatrice;
+
+import javax.swing.*;
+import java.awt.Font;
+
+public class Calcul implements ActionListener{
+	
+	JFrame frame;
+	JTextField textfield;
+	
+	JButton[] numberButton = new JButton[10];
+	JButton[] functionButton = new JButton[9];
+	
+	JButton addButton, subButton, mulButton, clrButton, negButton, divButton;
+	JPanel panel;
+	
+	Font myFont = new Font("Ink Free", Font.BOLD, 30);
+	double num1 = 0, num2 = 0, result = 0;
+	char operator;
+	
+	Calcul(){
+		frame = new JFrame("Premiere calculatrice d'hakim");
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frame.setSize(420,550);
+		frame.setLayout(null);
+		textfield = new JTextField();
+		textfield.setBounds(50,25,300,50);
+		textfield.setFont(myFont);
+		textfield.setEditable(false);
+		
+		
+		addButton = new JButton("+");
+		subButton = new JButton("-");
+		mulButton = new JButton("*");
+		divButton = new JButton("/")
+		clrButton = new JButton("-");
+		negButton = new JButton("-");
+		
+	}
+	
+}

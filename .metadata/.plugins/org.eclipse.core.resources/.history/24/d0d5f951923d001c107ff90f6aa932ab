@@ -1,0 +1,19 @@
+package calculatrice;
+
+import javax.swing.*;
+import java.awt.Font;
+
+public class Calcul implements ActionListener{
+	
+	JFrame frame;
+	JTextField textfield;
+	
+	JButton[] numberButton = new JButton[10];
+	JButton[] functionButton = new JButton[9];
+	
+	JButton addButton, subButton, mulButton, clrButton, negButton;
+	JPanel panel;
+	
+	Font myFont = new Font ("Ink Free",Font.BOLD,30);
+	
+}

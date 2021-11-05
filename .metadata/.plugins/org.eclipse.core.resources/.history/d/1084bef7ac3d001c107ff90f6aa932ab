@@ -1,0 +1,62 @@
+package calculatrice;
+
+import javax.swing.*;
+import java.awt.Font;
+
+public class Calcul implements ActionListener{
+	
+	JFrame frame;
+	JTextField textfield;
+	
+	JButton[] numberButton = new JButton[10];
+	JButton[] functionButton = new JButton[9];
+	
+	JButton addButton, subButton, mulButton, divButton, decButton, equButton, delButton, clrButton, negButton;
+	JPanel panel;
+	
+	Font myFont = new Font("Ink Free", Font.BOLD, 30);
+	double num1 = 0, num2 = 0, result = 0;
+	char operator;
+	
+	Calcul(){
+		frame = new JFrame("Premiere calculatrice d'hakim");
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frame.setSize(420,550);
+		frame.setLayout(null);
+		textfield = new JTextField();
+		textfield.setBounds(50,25,300,50);
+		textfield.setFont(myFont);
+		textfield.setEditable(false);
+		
+		
+		addButton = new JButton("+");
+		subButton = new JButton("-");
+		mulButton = new JButton("*");
+		divButton = new JButton("/");
+		decButton = new JButton(".");
+		equButton = new JButton("=");
+		delButton = new JButton("Del");
+		clrButton = new JButton("Clr");
+		negButton = new JButton("(-)");
+		
+		functionButton[0] = addButton;
+		functionButton[1] = subButton;
+		functionButton[2] = mulButton;
+		functionButton[3] = divButton;
+		functionButton[4] = decButton;
+		functionButton[5] = equButton;
+		functionButton[6] = delButton;
+		functionButton[7] = clrButton;
+		functionButton[8] = negButton;
+		
+		for(int i = 0; i < 9; i++) {
+			functionButton[i].addActionListener(this);
+			functionButton[i].setFont(myFont);
+			functionButton[i].setFocusable(false);
+			
+		}
+		
+		
+	}
+	
+}
